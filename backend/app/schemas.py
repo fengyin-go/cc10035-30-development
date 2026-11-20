@@ -29,3 +29,29 @@ class EntryPayload(BaseModel):
 class ActionPayload(BaseModel):
     action: str
     remark: str | None = None
+
+
+class NamespacePayload(BaseModel):
+    external_namespace: str
+    local_relation_type: str
+    partner_code: str | None = None
+
+
+class PartnerFilePayload(BaseModel):
+    partner_code: str
+    file_batch: str
+    file_kind: str = "initial"
+    conflict_policy: str = "await_partner_correction"
+    declarations: list[dict[str, Any]] = Field(default_factory=list)
+
+
+class EdgeRegisterPayload(BaseModel):
+    edge_id: str
+    source_entity: str
+    target_entity: str
+    relation_type: str
+    source_page: str
+    external_namespace: str
+    external_relation_id: str
+    old_edge_id: str | None = None
+    origin_evidence: str | None = None

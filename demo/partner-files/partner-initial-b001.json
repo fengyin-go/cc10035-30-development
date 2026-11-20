@@ -1,0 +1,58 @@
+{
+  "partner_code": "PARTNER-X",
+  "file_batch": "B-001-首次件",
+  "file_kind": "initial",
+  "conflict_policy": "await_partner_correction",
+  "declarations": [
+    {
+      "external_namespace": "px-rel",
+      "external_relation_id": "PX-R-9001",
+      "external_relation_label": "owns",
+      "source_page": "https://site.example.com/page/alpha",
+      "source_entity": "实体甲",
+      "target_entity": "实体乙",
+      "old_edge_id": "OLD-E-7001",
+      "renumber_basis": "合作方2026年关系编号体系切换，旧号 OLD-E-7001 换号为 PX-R-9001"
+    },
+    {
+      "external_namespace": "px-rel",
+      "external_relation_id": "PX-R-9001",
+      "external_relation_label": "owned_by",
+      "source_page": "https://site.example.com/page/alpha",
+      "source_entity": "实体乙",
+      "target_entity": "实体甲",
+      "old_edge_id": "OLD-E-7002",
+      "renumber_basis": "同页同名关系的反向有向边，旧号 OLD-E-7002 换号为 PX-R-9001 反向"
+    },
+    {
+      "external_namespace": "px-rel",
+      "external_relation_id": "PX-R-9003",
+      "external_relation_label": "cites",
+      "source_page": "https://site.example.com/page/beta",
+      "source_entity": "实体丙",
+      "target_entity": "实体丁",
+      "old_edge_id": "OLD-E-7003",
+      "renumber_basis": "旧号 OLD-E-7003 指向的关系属性与本站核验结果不一致"
+    },
+    {
+      "external_namespace": "px-rel",
+      "external_relation_id": "PX-R-9004",
+      "external_relation_label": "depends_on",
+      "source_page": "https://site.example.com/page/gamma",
+      "source_entity": "实体戊",
+      "target_entity": "实体己",
+      "old_edge_id": "",
+      "renumber_basis": ""
+    },
+    {
+      "external_namespace": "unknown-ns",
+      "external_relation_id": "ZZ-1",
+      "external_relation_label": "related",
+      "source_page": "https://site.example.com/page/delta",
+      "source_entity": "实体庚",
+      "target_entity": "实体辛",
+      "old_edge_id": "",
+      "renumber_basis": ""
+    }
+  ]
+}

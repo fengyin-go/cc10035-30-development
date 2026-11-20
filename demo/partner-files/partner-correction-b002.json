@@ -1,0 +1,28 @@
+{
+  "partner_code": "PARTNER-X",
+  "file_batch": "B-002-更正件",
+  "file_kind": "correction",
+  "conflict_policy": "await_partner_correction",
+  "declarations": [
+    {
+      "external_namespace": "px-rel",
+      "external_relation_id": "PX-R-9003",
+      "external_relation_label": "cites",
+      "source_page": "https://site.example.com/page/beta",
+      "source_entity": "实体丙",
+      "target_entity": "实体丁",
+      "old_edge_id": "EDGE-BETA-01",
+      "renumber_basis": "更正：首次件旧号 OLD-E-7003 填报有误，实际旧号为 EDGE-BETA-01，与本站核验属性一致"
+    },
+    {
+      "external_namespace": "px-rel",
+      "external_relation_id": "PX-R-9001",
+      "external_relation_label": "owns",
+      "source_page": "https://site.example.com/page/alpha",
+      "source_entity": "实体甲",
+      "target_entity": "实体乙",
+      "old_edge_id": "OLD-E-7001",
+      "renumber_basis": "补正换号依据：合作方编号体系切换公告编号 PARTNER-X-2026-017"
+    }
+  ]
+}
